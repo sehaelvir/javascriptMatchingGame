@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        #MatchingGame {
+            border: 1px solid black;
+            width: 450px; 
+            height: 450px; 
+            position: relative; 
+        }
+        #gameWin {
+            width: 450px; 
+            height: 450px; 
+            position: relative; 
+            visibility: hidden; 
+            text-align: center; 
+            display: table-cell; 
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-top: 40px;">
+        <h1>Matching Game in JavaScript</h1>
+        <div class="jumbotron" style="background: rgb(190, 167, 147);">
+          <div id="MatchingGame"><div>
+          <div id="gameWin">YOU WIN!<div>         
+        </div>
+        
+    </div>
+    <div style="border: 1px solid black; position: absolute; top: -55px; padding: 10px; width: 85px; text-align: center;">
+        <span id="counter"><b>Hits</b></span>
+     <div>
+     <div style="border: 1px solid black; position: absolute; left: 100px; top: 0; padding: 10px; width: 85px;">
+        <span id="score"><b>Match</b></span>
+     <div>
+     <div style="position: absolute; left: 140px; bottom:-8px; padding: 10px; width: 150px; text-align: center;">
+        <button class="btn btn-primary" id="newGame" onclick="window.location.reload();">Start Game</button>
+     <div>
+     <div style="position: absolute; left: 130px; bottom:-0px; padding: 10px; width: 150px; text-align: center;">
+        <button class="btn btn-danger" id="resetGame" onclick="window.location.reload();">Reset</button>
+     <div>
+ <script src="MatchingGame.js"></script>
+</body>
+</html>
+
